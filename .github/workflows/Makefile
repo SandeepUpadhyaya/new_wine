@@ -1,7 +1,7 @@
 setup:
-	python3 -m venv ~/.flask-ml-azure-serverless1
+	python3 -m venv ~/.new_wine
 
-	#source ~/.flask-ml-azure-serverless1/bin/activate
+	#source ~/.new_wine/bin/activate
 
 install:
 	pip install --upgrade pip &&\
@@ -14,6 +14,6 @@ lint:
 	pylint --disable=R,C,W1203,W0702 app.py
 
 run:
-	python app.py
+	python new_app.py
 
 all: install lint test
