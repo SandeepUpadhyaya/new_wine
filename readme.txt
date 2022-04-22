@@ -33,3 +33,5 @@ mlflow models build-docker -m mlruns\0\1b44805fd5e84ac3a536bd25fb59c26b\artifact
 
 deploy
 docker run -p 8080:8080 elastic_net_wine
+
+------------------------------------------------------------------------------------
