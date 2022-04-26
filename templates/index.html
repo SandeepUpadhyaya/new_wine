@@ -94,7 +94,8 @@ body
   <h1 class="Sub-Heading"> Enter the attribute values </h1>
      <!-- Main Input For Receiving Query to our ML -->
 	 <div class="container">
-    <form action="http://127.0.0.1:5000/predict" method="post">
+    <!-- <form action="http://127.0.0.1:5000/predict" method="post"> -->
+		<form action="https://winequality-flask.azurewebsites.net/predict" method="post">
     	<input type="text" name="fixed acidity" placeholder="fixed acidity" required="required" />
         <input type="text" name="volatile acidity" placeholder="volatile acidity" required="required" />
 		<input type="text" name="citric acid" placeholder="citric acid" required="required" />
