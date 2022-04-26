@@ -10,7 +10,7 @@ model = joblib.load("wine.pkl")
 @app.route('/')
 def home():
     return render_template('index.html')
-print("good to go")
+print("good to go yes")
 
 @app.route('/predict',methods=['POST'])
 def predict():
