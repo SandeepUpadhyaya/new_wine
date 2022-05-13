@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify, render_template
 import joblib
 
 app = Flask(__name__)
-model = joblib.load("wine.pkl")
+model = joblib.load("wine_retrained.pkl")
 
 
 
