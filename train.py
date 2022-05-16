@@ -47,7 +47,7 @@ if __name__ == "__main__":
             "Unable to download training & test CSV, check your internet connection. Error: %s", e
         )
 
-    # Split the data into training and test sets. (0.75, 0.25) split.
+    
     train, test = train_test_split(data)
 
     # The predicted column is "quality" which is a scalar from [3, 9]
@@ -83,10 +83,7 @@ if __name__ == "__main__":
         # Model registry does not work with file store
         if tracking_url_type_store != "file":
 
-            # Register the model
-            # There are other ways to use the Model Registry, which depends on the use case,
-            # please refer to the doc for more information:
-            # https://mlflow.org/docs/latest/model-registry.html#api-workflow
+           
             mlflow.sklearn.log_model(lr, "model", registered_model_name="ElasticnetWineModel")
         else:
             mlflow.sklearn.log_model(lr, "model")
